@@ -516,6 +516,11 @@ features p {
   }
 
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+  
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
