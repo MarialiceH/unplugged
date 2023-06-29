@@ -123,24 +123,27 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.125 em;
   margin: 20px 0;
-
 }
 
 p {
   font-size: 0.875em;
   line-height: 1.285;
 }
+
 img {
   width: 100%;
 }
+
 figure {
   margin: 0;
 }
@@ -150,12 +153,12 @@ address {
 }
 
 .content-wrapper {
-  /*outline: 3px dotted red;*/
   width: 90%;
   margin: 50px 0;
 }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
+
 header {
   display: flex;
   justify-content: center;
@@ -169,6 +172,10 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -186,9 +193,13 @@ header nav {
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
@@ -233,9 +244,9 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
-  background: url('../img/unplugged-retreat.jpg'); 
+  background: url('../img/unplugged-retreat.jpg');
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -254,6 +265,32 @@ aside {
   display: flex;
   justify-content: center;
   background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 aside .form {
@@ -309,6 +346,7 @@ input[type=button] {
 }
 
 features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -489,6 +527,16 @@ features p {
     line-height: 1.25;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   /* Header */
   header {
     padding: 33px 0;
@@ -520,7 +568,7 @@ features p {
   .hero-area {
     min-height: 600px;
   }
-  
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -559,6 +607,7 @@ features p {
   }
 
   /* Reviews */
+
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -568,6 +617,7 @@ features p {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -736,6 +786,7 @@ features p {
   /* ============ FAQ Page ============= */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   .faq h4,
